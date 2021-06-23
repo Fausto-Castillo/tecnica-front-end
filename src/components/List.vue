@@ -8,7 +8,7 @@
         @click="goToDetail(item)"
       >
         <div>{{ item.name }}</div>
-        <img class="icon" :src="getSrc()" alt="Icon List" />
+        <img class="icon" :src="getSrc" alt="Icon List" />
       </li>
     </ul>
   </div>
@@ -36,20 +36,25 @@ export default {
       this.$store.commit("setDataDetail", item);
       this.$router.push({ name: "detail" });
     },
-    getSrc() {
-      switch (this.title) {
-        case "People":
-          return require("@/assets/icons/lightsaber.png");
-        case "Starships":
-          return require("@/assets/icons/starship.png");
-        case "Planets":
-          return require("@/assets/icons/planet.png");
-      }
-    },
   },
   computed: {
     title() {
       return this.$store.state.headerTitle;
+    },
+    getSrc() {
+      let src;
+      switch (this.title) {
+        case "People":
+          src = require("@/assets/icons/lightsaber.png");
+          break
+        case "Starships":
+          src = require("@/assets/icons/starship.png");
+          break
+        case "Planets":
+          src = require("@/assets/icons/planet.png");
+          break
+      }
+      return src;
     },
   },
 };

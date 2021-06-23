@@ -24,7 +24,7 @@ export default {
     goBack() {
       window.history.length > 1 ? this.$router.go(-1) : this.$router.push("/");
     },
-    showInformation(key) {
+      showInformation(key) {
       switch (key) {
         case "homeworld":
           return false;
@@ -37,6 +37,8 @@ export default {
         case "url":
           return false;
         case "residents":
+          return false;
+        case "pilots":
           return false;
       }
       return true;
