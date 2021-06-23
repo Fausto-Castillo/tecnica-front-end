@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import ButtonGoBack from "@/components/ButtonGoBack";
+import ButtonGoBack from "@/components/layout/ButtonGoBack";
 export default {
   name: "Header",
   components: {

@@ -83,13 +83,13 @@ export default {
 
 
 <style >
-.people{
-  padding-left:2rem;
+.people {
+  padding-left: 2rem;
 }
-@media(max-width:1024px) {
-  .people{
-   padding-left:1rem;
-   padding-bottom:2rem;
-}
+@media (max-width: 1024px) {
+  .people {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
 }
 </style>

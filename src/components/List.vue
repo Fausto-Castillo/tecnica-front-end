@@ -58,7 +58,6 @@ export default {
 li {
   list-style: none;
   margin-right: 1rem;
-  
 }
 .card-list {
   height: 3.2rem;
@@ -83,7 +82,7 @@ li {
   margin-bottom: 0.3rem;
   margin-left: 0;
   box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
-  & .icon{
+  & .icon {
     display: block;
   }
 }
@@ -93,15 +92,15 @@ ul {
 .icon {
   display: none;
   transition: 0.3s;
-  height:3rem;
+  height: 3rem;
 }
-.card-container{
+.card-container {
   display: flex;
   flex-wrap: wrap;
 }
-@media(max-width:1024px) {
-  .card-container{
-  display: block;
-}
+@media (max-width: 1024px) {
+  .card-container {
+    display: block;
+  }
 }
 </style>

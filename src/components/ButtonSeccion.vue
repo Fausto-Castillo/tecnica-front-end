@@ -34,9 +34,9 @@ export default {
 body {
   font-family: "Muli", sans-serif;
 }
-.button-seccion{
-  display:flex;
-  justify-content:center;
+.button-seccion {
+  display: flex;
+  justify-content: center;
 }
 .card {
   background-color: #2a265f;
@@ -72,34 +72,34 @@ body {
   object-fit: cover;
 }
 
-@media (max-width:'760px') {
+@media (max-width: "760px") {
   .card {
-  width: 400px;
-  height: 300px;
-  display: block;
-}
-.title {
-  color: #fff;
-  text-align: center;
-  transition: 0.3s;
-  font-size: 1.5rem;
-  height: 3rem;
-  width:100%;
-}
-.card:hover {
-  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.4);
-   .title {
-    width: 8rem;
-    font-size: 1rem;
-    height:0.5rem;
-    text-align: center;
-    width:100%;
+    width: 400px;
+    height: 300px;
+    display: block;
   }
-  .image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-}
+  .title {
+    color: #fff;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 100%;
+  }
+  .card:hover {
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.4);
+    .title {
+      width: 8rem;
+      font-size: 1rem;
+      height: 0.5rem;
+      text-align: center;
+      width: 100%;
+    }
+    .image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
 }
 </style>
